@@ -1,0 +1,136 @@
+.search {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #457b9d;
+	border-radius: 50px;
+	transition: width 500ms cubic-bezier(0.53, -0.63, 0.47, 1.6);
+}
+.search:focus-within {
+	width: 300px;
+}
+.search:focus-within .search__input {
+	display: block;
+}
+.search:focus-within .search__circle {
+	left: -3px;
+	top: 4px;
+}
+.search:focus-within .search__circle::before,
+.search:focus-within .search__circle::after {
+	border-radius: 5px;
+	background-color: #457b9d;
+	width: 15px;
+	height: 4px;
+}
+.search:focus-within .search__circle::before {
+	top: 3px;
+	transform: rotate(-45deg);
+}
+.search:focus-within .search__circle::after {
+	transform: rotate(45deg);
+}
+.search:focus-within .search__stand {
+	top: 15px;
+	left: 11px;
+	transform: rotate(0deg);
+}
+.search:focus-within .search__stand::before {
+	top: -8px;
+	height: 5px;
+
+	transform: rotate(-45deg);
+}
+.search:focus-within .search__stand::after {
+	transform: rotate(45deg);
+	height: 5px;
+}
+
+.search__form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: auto;
+	margin-left: 2px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #457b9d;
+	border-radius: 50%;
+}
+.search__input {
+	position: absolute;
+	display: none;
+	right: 2px;
+	width: calc(100% - 50px);
+	height: 80%;
+	outline: 0;
+	border: none;
+	background-color: transparent;
+}
+.search__input::placeholder {
+	color: #999999;
+}
+.search__btn {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	outline: 0;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+.search__circle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	left: 0;
+}
+.search__circle::before,
+.search__circle::after {
+	content: "";
+	position: absolute;
+	width: 18px;
+	height: 9px;
+	border: 5px solid #457b9d;
+	transition: all 100ms ease;
+}
+.search__circle::before {
+	top: 2px;
+	left: 2px;
+	border-bottom: 0;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.search__circle::after {
+	top: 11px;
+	left: 2px;
+	border-top: 0;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.search__stand {
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	width: 15px;
+	height: 4px;
+	background-color: transparent;
+	transform: rotate(45deg);
+}
+.search__stand::before,
+.search__stand::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 2px;
+	width: 15px;
+	height: 4px;
+	background-color: #457b9d;
+	border-radius: 10px;
+	transition: all 100ms ease;
+}
