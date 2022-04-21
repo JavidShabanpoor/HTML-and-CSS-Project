@@ -7,16 +7,60 @@
 		<title>navbar section</title>
 		<link rel="stylesheet" href="css/01-layout.css" />
 		<link rel="stylesheet" href="css/02-search.css" />
+		<link rel="stylesheet" href="css/03-navbar.css" />
+		<link rel="stylesheet" href="css/04-nav.css" />
 	</head>
 	<body>
-		<div class="search">
-			<form action="#" class="search__form">
-				<input type="text" class="search__input" placeholder="جستجو کنید" />
-				<button class="search__btn">
-					<span class="search__circle"></span>
-					<span class="search__stand"></span>
-				</button>
-			</form>
+		<div class="navbar">
+			<div
+				class="container pt-20 pb-20 pl-10 pr-10 flex flex-justify-s-b flex-align-items-c"
+			>
+				<div class="navbar__search--box">
+					<div class="search">
+						<form action="#" class="search__form">
+							<input
+								type="text"
+								class="search__input"
+								placeholder="جستجو کنید"
+							/>
+							<button class="search__btn">
+								<span class="search__circle"></span>
+								<span class="search__stand"></span>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="navbar__nav">
+					<div class="nav">
+						<ul class="nav__lists">
+							<li class="nav__list"><a href="/" class="nav__link">خانه</a></li>
+							<li class="nav__list">
+								<a href="/" class="nav__link">دوره ها</a>
+							</li>
+							<li class="nav__list">
+								<a href="/" class="nav__link">مدرسین</a>
+							</li>
+							<li class="nav__list">
+								<a href="/" class="nav__link">درباره ما</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="navbar__logo">
+					<a href="/">
+						<img
+							class="hidden show-large"
+							src="images/logo-header.png"
+							alt="logo large"
+						/>
+						<img
+							class="hidden show-small"
+							src="images/logo-header-small.png"
+							alt="logo large"
+						/>
+					</a>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
