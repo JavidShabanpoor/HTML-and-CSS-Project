@@ -3,50 +3,55 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 50px;
-	height: 50px;
-	border: 3px solid #457b9d;
-	border-radius: 50px;
+	width: 5rem;
+	height: 5rem;
+	border: 0.3rem solid #457b9d;
+	border-radius: 5rem;
 	transition: width 500ms cubic-bezier(0.53, -0.63, 0.47, 1.6);
 }
 .search:focus-within {
-	width: 300px;
+	width: 20rem;
+}
+@media only screen and (max-width: 768px) {
+	.search:focus-within {
+		width: 13rem;
+	}
 }
 .search:focus-within .search__input {
 	display: block;
 }
 .search:focus-within .search__circle {
-	left: -3px;
-	top: 4px;
+	left: -0.3rem;
+	top: 0.4rem;
 }
 .search:focus-within .search__circle::before,
 .search:focus-within .search__circle::after {
-	border-radius: 5px;
+	border-radius: 0.5rem;
 	background-color: #457b9d;
-	width: 15px;
-	height: 4px;
+	width: 1.5rem;
+	height: 0.4rem;
 }
 .search:focus-within .search__circle::before {
-	top: 3px;
+	top: 0.3rem;
 	transform: rotate(-45deg);
 }
 .search:focus-within .search__circle::after {
 	transform: rotate(45deg);
 }
 .search:focus-within .search__stand {
-	top: 15px;
-	left: 11px;
+	top: 1.5rem;
+	left: 1.1rem;
 	transform: rotate(0deg);
 }
 .search:focus-within .search__stand::before {
-	top: -8px;
-	height: 5px;
+	top: -0.8rem;
+	height: 0.5rem;
 
 	transform: rotate(-45deg);
 }
 .search:focus-within .search__stand::after {
 	transform: rotate(45deg);
-	height: 5px;
+	height: 0.5rem;
 }
 
 .search__form {
@@ -54,29 +59,30 @@
 	justify-content: center;
 	align-items: center;
 	margin-right: auto;
-	margin-left: 2px;
-	width: 40px;
-	height: 40px;
-	border: 1px solid #457b9d;
+	margin-left: 0.2rem;
+	width: 4rem;
+	height: 4rem;
+	border: 0.1rem solid #457b9d;
 	border-radius: 50%;
 }
 .search__input {
 	position: absolute;
 	display: none;
-	right: 2px;
-	width: calc(100% - 50px);
+	right: 0.2rem;
+	width: calc(100% - 5rem);
 	height: 80%;
 	outline: 0;
 	border: none;
 	background-color: transparent;
 }
 .search__input::placeholder {
+	padding-right: 0.5rem;
 	color: #999999;
 }
 .search__btn {
 	position: relative;
-	width: 30px;
-	height: 30px;
+	width: 3rem;
+	height: 3rem;
 	border-radius: 50%;
 	outline: 0;
 	border: none;
@@ -85,8 +91,8 @@
 }
 .search__circle {
 	position: absolute;
-	width: 20px;
-	height: 20px;
+	width: 2rem;
+	height: 2rem;
 	top: 0;
 	left: 0;
 }
@@ -94,31 +100,31 @@
 .search__circle::after {
 	content: "";
 	position: absolute;
-	width: 18px;
-	height: 9px;
-	border: 5px solid #457b9d;
+	width: 1.8rem;
+	height: 0.9rem;
+	border: 0.5rem solid #457b9d;
 	transition: all 100ms ease;
 }
 .search__circle::before {
-	top: 2px;
-	left: 2px;
+	top: 0.2rem;
+	left: 0.2rem;
 	border-bottom: 0;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
+	border-top-right-radius: 1rem;
+	border-top-left-radius: 1rem;
 }
 .search__circle::after {
-	top: 11px;
-	left: 2px;
+	top: 1.1rem;
+	left: 0.2rem;
 	border-top: 0;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
 }
 .search__stand {
 	position: absolute;
-	top: 20px;
-	left: 15px;
-	width: 15px;
-	height: 4px;
+	top: 2rem;
+	left: 1.5rem;
+	width: 1.5rem;
+	height: 0.4rem;
 	background-color: transparent;
 	transform: rotate(45deg);
 }
@@ -127,10 +133,10 @@
 	content: "";
 	position: absolute;
 	top: 0;
-	right: 2px;
-	width: 15px;
-	height: 4px;
+	right: 0.2rem;
+	width: 1.5rem;
+	height: 0.4rem;
 	background-color: #457b9d;
-	border-radius: 10px;
+	border-radius: 1rem;
 	transition: all 100ms ease;
 }

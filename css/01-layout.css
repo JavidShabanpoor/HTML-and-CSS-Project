@@ -25,11 +25,15 @@
 		/* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 			url("../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
 }
+html {
+	font-size: 62.5%;
+}
 body {
 	font-family: IRANSans !important;
+	font-size: 1.5rem;
 	font-weight: 300;
 	direction: rtl;
-	background-color: #e2e2e2;
+	background-color: #f5f5f5;
 	margin: 0;
 }
 h1,
@@ -53,4 +57,169 @@ h1 {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+.container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media only screen and (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}
+
+/* handler for property */
+.flex {
+	display: flex;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-column {
+	flex-direction: column;
+}
+.flex-justify-c {
+	justify-content: center;
+}
+.flex-justify-s-b {
+	justify-content: space-between;
+}
+.flex-align-items-c {
+	align-items: center;
+}
+.pt-10 {
+	padding-top: 1rem;
+}
+.pb-10 {
+	padding-bottom: 1rem;
+}
+.pt-20 {
+	padding-top: 2rem;
+}
+.pb-20 {
+	padding-bottom: 2rem;
+}
+.pt-30 {
+	padding-top: 3rem;
+}
+.pb-30 {
+	padding-bottom: 3rem;
+}
+.pt-40 {
+	padding-top: 4rem;
+}
+.pb-40 {
+	padding-bottom: 4rem;
+}
+
+.pr-10 {
+	padding-right: 1rem;
+}
+.pl-10 {
+	padding-left: 1rem;
+}
+.pr-20 {
+	padding-right: 2rem;
+}
+.pl-20 {
+	padding-left: 2rem;
+}
+.pr-30 {
+	padding-right: 3rem;
+}
+.pl-30 {
+	padding-left: 3rem;
+}
+.pr-40 {
+	padding-right: 4rem;
+}
+.pl-40 {
+	padding-left: 4rem;
+}
+
+.mt-10 {
+	margin-top: 1rem;
+}
+.mb-10 {
+	margin-bottom: 1rem;
+}
+.mt-20 {
+	margin-top: 2rem;
+}
+.mb-20 {
+	margin-bottom: 2rem;
+}
+.mt-30 {
+	margin-top: 3rem;
+}
+.mb-30 {
+	margin-bottom: 3rem;
+}
+.mt-40 {
+	margin-top: 4rem;
+}
+.mb-40 {
+	margin-bottom: 4rem;
+}
+
+.mr-10 {
+	margin-right: 1rem;
+}
+.ml-10 {
+	margin-left: 1rem;
+}
+.mr-20 {
+	margin-right: 2rem;
+}
+.ml-20 {
+	margin-left: 2rem;
+}
+.mr-30 {
+	margin-right: 3rem;
+}
+.ml-30 {
+	margin-left: 3rem;
+}
+.mr-40 {
+	margin-right: 4rem;
+}
+.ml-40 {
+	margin-left: 4rem;
+}
+.hidden {
+	display: none;
+}
+@media only screen and (max-width: 992px) {
+	.show-small {
+		display: block;
+	}
+}
+@media only screen and (min-width: 993px) {
+	.show-large {
+		display: block;
+	}
 }
