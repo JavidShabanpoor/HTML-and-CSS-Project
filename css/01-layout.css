@@ -61,6 +61,10 @@ h1 {
 ul {
 	list-style: none;
 }
+a {
+	text-decoration: none;
+	color: #0d62da;
+}
 .container {
 	width: 100%;
 	margin-right: auto;

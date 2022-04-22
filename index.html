@@ -32,34 +32,52 @@
 				</div>
 				<div class="navbar__nav">
 					<div class="nav">
+						<input class="nav__burger-checkbox" id="burgermenu" type="checkbox">
+						<label class="nav__burger--lable" for="burgermenu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</label>
 						<ul class="nav__lists">
 							<li class="nav__list"><a href="/" class="nav__link">خانه</a></li>
 							<li class="nav__list">
-								<a href="/" class="nav__link">دوره ها</a>
+								<a href="/" class="nav__link">دوره ها<span class="nav__arrow"></span></a>
+								<ul class="nav__sublists1">
+									<li><a href="#">تور و گردشگری</a></li>
+									<li><a href="#">آموزش آنلاین</a></li>
+									<li class="nav__sublist1">
+										<a href="#">سایر</a>
+										<ul class="nav__sublists2">
+											<li><a href="#">فروشگاه اینترنتی</a></li>
+											<li><a href="#">بلیط هواپیما و هتل</a></li>
+											<li><a href="#">اجاره خودرو</a></li>
+										</ul>
+									</li>
+								</ul>
 							</li>
 							<li class="nav__list">
-								<a href="/" class="nav__link">مدرسین</a>
+								<a href="/" class="nav__link">مدرسین<span class="nav__arrow"></span></a>
 							</li>
 							<li class="nav__list">
 								<a href="/" class="nav__link">درباره ما</a>
 							</li>
 						</ul>
-					</div>
+					</input>
 				</div>
-				<div class="navbar__logo">
-					<a href="/">
-						<img
-							class="hidden show-large"
-							src="images/logo-header.png"
-							alt="logo large"
-						/>
-						<img
-							class="hidden show-small"
-							src="images/logo-header-small.png"
-							alt="logo large"
-						/>
-					</a>
-				</div>
+			</div>
+			<div class="navbar__logo">
+				<a href="/">
+					<img
+						class="hidden show-large"
+						src="images/logo-header.png"
+						alt="logo large"
+					/>
+					<img
+						class="hidden show-small"
+						src="images/logo-header-small.png"
+						alt="logo large"
+					/>
+				</a>
 			</div>
 		</div>
 	</body>
