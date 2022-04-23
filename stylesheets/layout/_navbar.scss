@@ -8,7 +8,7 @@
 	.navbar {
 		position: sticky;
 		top: 0;
-		box-shadow: 0 0 4px #444444;
+		box-shadow: 0 0 4px $color-gray3;
 	}
 }
 @media only screen and (max-width: 992px) {

@@ -17,17 +17,17 @@
 .nav__sublists2 {
 	position: absolute;
 	width: 20rem;
-	border-top: 0.3rem solid #e76f51;
+	border-top: 0.3rem solid $color-orange1;
 	border-radius: 0.3rem;
-	background-color: #fff;
-	box-shadow: 0 0 4px #444;
+	background-color: $color-gray1;
+	box-shadow: 0 0 4px $color-gray3;
 	transform-origin: top right;
 	transform: scale(0);
 	transition: all 0.3s ease;
 }
 .nav__sublists1 i {
 	margin-left: 1rem;
-	color: #457b9d;
+	color: $color-blue3;
 }
 
 /* sublist1 li */
@@ -50,13 +50,13 @@
 	display: flex;
 	padding: 1.3rem;
 	align-items: center;
-	color: #444;
+	color: $color-gray3;
 	transition: all 0.3s ease;
 }
 .nav__sublists1 a:hover {
 	padding-right: 1.5rem;
-	background-color: #f1f1f1;
-	color: #0d62da;
+	background-color: $color-gray1;
+	color: $color-blue1;
 }
 
 /* Level3 link */
@@ -67,7 +67,7 @@
 	transition: all 0.3s ease;
 }
 .nav__link:hover {
-	color: #3c4858;
+	color: $color-brown1;
 }
 .nav__link::after {
 	content: "";
@@ -77,7 +77,7 @@
 	transform: translateX(-50%);
 	width: 0%;
 	height: 0.3rem;
-	background-color: #0d62da;
+	background-color: $color-blue1;
 	border-radius: 0.5rem;
 	transition: all 0.3s ease;
 }
@@ -92,7 +92,7 @@
 	top: 40%;
 	width: 0.7rem;
 	height: 0.7rem;
-	border: 0.1rem solid #3c4858;
+	border: 0.1rem solid $color-brown1;
 	border-width: 0rem 0.1rem 0.1rem 0rem;
 	transform: rotate(45deg);
 	transition: all 0.6s ease;
@@ -118,9 +118,9 @@
 	padding: 1rem;
 	white-space: nowrap;
 	background-image: conic-gradient(#98d6f3, #fea2b1, #f7f1fa, #98d6f3);
-	border-top: 0.3rem solid #e76f51;
+	border-top: 0.3rem solid $color-orange1;
 	border-radius: 0.3rem;
-	box-shadow: 0 0 4px #444;
+	box-shadow: 0 0 4px $color-gray3;
 	transform: scale(1, 0);
 	transform-origin: top;
 	transition: all 0.3s ease;
@@ -147,10 +147,10 @@
 	justify-content: center;
 	align-items: center;
 	padding: 1.5rem;
-	color: #444;
+	color: $color-gray3;
 }
 .nav__mega-lists a:hover {
-	color: #0d62da;
+	color: $color-blue1;
 }
 
 .nav__mega-lists i {
@@ -158,12 +158,12 @@
 	transition: all 0.3s ease;
 }
 .nav__mega-lists a:hover > i {
-	color: #444;
+	color: $color-gray3;
 	transform: rotate(1turn);
 }
 .nav__mega-culomn > h4 {
 	padding: 2rem;
-	border-bottom: 0.3rem solid #e76f51;
+	border-bottom: 0.3rem solid $color-orange1;
 }
 .nav__mega-culomn > .nav__button {
 	align-self: center;
@@ -190,7 +190,7 @@
 .nav__burger--lable > span {
 	height: 0.5rem;
 	border-radius: 0.5rem;
-	background-color: #2196f3;
+	background-color: $color-blue2;
 	transition: all 300ms cubic-bezier(0.53, -0.63, 0.47, 1.6);
 }
 .nav__burger--lable :nth-child(1) {
@@ -230,7 +230,7 @@
 		display: none;
 		width: 100vw;
 		height: auto;
-		background-color: #edfcff;
+		background-color: $color-blue4;
 	}
 	.nav__burger-checkbox:checked ~ .nav__mobile-wrap {
 		display: block;
@@ -242,7 +242,7 @@
 		flex-direction: column;
 	}
 	.nav__list:not(:last-child) {
-		border-bottom: 0.1rem solid #ccc;
+		border-bottom: 0.1rem solid $color-gray2;
 	}
 	.nav__sublists1,
 	.nav__sublists2,

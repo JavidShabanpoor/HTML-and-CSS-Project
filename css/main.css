@@ -511,9 +511,9 @@ a:hover {
   width: 20rem;
   border-top: 0.3rem solid #e76f51;
   border-radius: 0.3rem;
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 4px #444;
-          box-shadow: 0 0 4px #444;
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0 0 4px #444444;
+          box-shadow: 0 0 4px #444444;
   -webkit-transform-origin: top right;
           transform-origin: top right;
   -webkit-transform: scale(0);
@@ -556,7 +556,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #444;
+  color: #444444;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -647,8 +647,8 @@ a:hover {
   background-image: conic-gradient(#98d6f3, #fea2b1, #f7f1fa, #98d6f3);
   border-top: 0.3rem solid #e76f51;
   border-radius: 0.3rem;
-  -webkit-box-shadow: 0 0 4px #444;
-          box-shadow: 0 0 4px #444;
+  -webkit-box-shadow: 0 0 4px #444444;
+          box-shadow: 0 0 4px #444444;
   -webkit-transform: scale(1, 0);
           transform: scale(1, 0);
   -webkit-transform-origin: top;
@@ -706,7 +706,7 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.5rem;
-  color: #444;
+  color: #444444;
 }
 
 .nav__mega-lists a:hover {
@@ -720,7 +720,7 @@ a:hover {
 }
 
 .nav__mega-lists a:hover > i {
-  color: #444;
+  color: #444444;
   -webkit-transform: rotate(1turn);
           transform: rotate(1turn);
 }
@@ -835,7 +835,7 @@ a:hover {
             flex-direction: column;
   }
   .nav__list:not(:last-child) {
-    border-bottom: 0.1rem solid #ccc;
+    border-bottom: 0.1rem solid #cccccc;
   }
   .nav__sublists1,
   .nav__sublists2,

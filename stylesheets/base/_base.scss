@@ -36,9 +36,9 @@ ul {
 }
 a {
 	text-decoration: none;
-	color: #0d62da;
+	color: $color-blue1;
 	transition: color 0.3s ease;
 }
 a:hover {
-	color: #e76f51;
+	color: $color-orange1;
 }
