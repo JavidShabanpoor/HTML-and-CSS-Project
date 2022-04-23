@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
 	.nav__lists {
 		display: none;
 	}
@@ -111,6 +111,7 @@
 	position: static;
 }
 .nav__mega:hover > .nav__mega-content {
+	transform: scale(1, 1);
 }
 .nav__mega-content {
 	position: absolute;
@@ -120,12 +121,19 @@
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 1rem;
-	background-color: white;
+	white-space: nowrap;
+	background-image: conic-gradient(#98d6f3, #fea2b1, #f7f1fa, #98d6f3);
 	border-top: 0.3rem solid #e76f51;
 	border-radius: 0.3rem;
 	box-shadow: 0 0 4px #444;
-	/* transform: scale(0); */
+	transform: scale(1, 0);
+	transform-origin: top;
 	transition: all 0.3s ease;
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	.nav__mega-content {
+		width: 67rem;
+	}
 }
 .nav__mega-culomn {
 	display: flex;
@@ -138,6 +146,32 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+}
+.nav__mega-lists a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5rem;
+	color: #444;
+}
+.nav__mega-lists a:hover {
+	color: #0d62da;
+}
+
+.nav__mega-lists i {
+	margin-left: 0.5rem;
+	transition: all 0.3s ease;
+}
+.nav__mega-lists a:hover > i {
+	color: #444;
+	transform: rotate(1turn);
+}
+.nav__mega-culomn > h4 {
+	padding: 2rem;
+	border-bottom: 0.3rem solid #e76f51;
+}
+.nav__mega-culomn > .nav__button {
+	align-self: center;
 }
 /* burger menu */
 .nav__burger-checkbox {
