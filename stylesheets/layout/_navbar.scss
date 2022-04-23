@@ -1,25 +1,25 @@
-.navbar__search--box {
-	width: 20rem;
-}
-.navbar__nav {
-	flex-grow: 1;
-}
-@media only screen and (max-width: 769px) {
-	.navbar {
+.navbar {
+	@media only screen and (max-width: 769px) {
 		position: sticky;
 		top: 0;
 		box-shadow: 0 0 4px $color-gray3;
 	}
-}
-@media only screen and (max-width: 992px) {
-	.navbar__search--box {
-		order: 1;
-		width: auto;
+	&__search--box {
+		width: 20rem;
+		@media only screen and (max-width: 992px) {
+			order: 1;
+			width: auto;
+		}
 	}
-	.navbar__logo {
-		order: 2;
+	&__nav {
+		flex-grow: 1;
+		@media only screen and (max-width: 992px) {
+			flex-grow: 0;
+		}
 	}
-	.navbar__nav {
-		flex-grow: 0;
+	&__logo {
+		@media only screen and (max-width: 992px) {
+			order: 2;
+		}
 	}
 }
