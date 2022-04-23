@@ -1,5 +1,6 @@
 /* Level1 lists */
 .nav__lists {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,12 +10,64 @@
 		display: none;
 	}
 }
+.nav__list {
+	position: relative;
+}
+.nav__list:hover > ul.nav__sublists1 {
+	transform: scale(1);
+}
 
-/* Leevel2 list */
+/* sublists1 ul */
+.nav__sublists1,
+.nav__sublists2 {
+	position: absolute;
+	width: 20rem;
+	border-top: 0.3rem solid #e76f51;
+	border-radius: 0.3rem;
+	background-color: #fff;
+	box-shadow: 0 0 4px #444;
+	transform-origin: top right;
+	transform: scale(0);
+	transition: all 0.3s ease;
+}
+.nav__sublists1 i {
+	margin-left: 1rem;
+	color: #457b9d;
+}
+
+/* sublist1 li */
+.nav__sublist1 {
+	position: relative;
+}
+.nav__sublist1:hover > ul.nav__sublists2 {
+	transform: scale(1);
+}
+.nav__sublist1 > a i:last-child {
+	margin-right: auto;
+}
+/* sublists2 ul */
+.nav__sublists2 {
+	right: 100%;
+	top: 0;
+}
+/* all submenu links */
+.nav__sublists1 a {
+	display: flex;
+	padding: 1.3rem;
+	align-items: center;
+	color: #444;
+	transition: all 0.3s ease;
+}
+.nav__sublists1 a:hover {
+	padding-right: 1.5rem;
+	background-color: #f1f1f1;
+	color: #0d62da;
+}
 
 /* Level3 link */
 .nav__link {
 	position: relative;
+	display: block;
 	padding: 1.3rem;
 	transition: all 0.3s ease;
 }
@@ -53,6 +106,39 @@
 	transform: rotate(225deg);
 }
 
+/* Mega Menu */
+.nav__mega {
+	position: static;
+}
+.nav__mega:hover > .nav__mega-content {
+}
+.nav__mega-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1rem;
+	background-color: white;
+	border-top: 0.3rem solid #e76f51;
+	border-radius: 0.3rem;
+	box-shadow: 0 0 4px #444;
+	/* transform: scale(0); */
+	transition: all 0.3s ease;
+}
+.nav__mega-culomn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.nav__mega-lists {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
 /* burger menu */
 .nav__burger-checkbox {
 	display: none;

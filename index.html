@@ -5,6 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>navbar section</title>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="css/01-layout.css" />
 		<link rel="stylesheet" href="css/02-search.css" />
 		<link rel="stylesheet" href="css/03-navbar.css" />
@@ -12,17 +18,11 @@
 	</head>
 	<body>
 		<div class="navbar">
-			<div
-				class="container pt-20 pb-20 pl-10 pr-10 flex flex-justify-s-b flex-align-items-c"
-			>
+			<div class="container pt-20 pb-20 pl-10 pr-10 flex flex-justify-s-b flex-align-items-c">
 				<div class="navbar__search--box">
 					<div class="search">
 						<form action="#" class="search__form">
-							<input
-								type="text"
-								class="search__input"
-								placeholder="جستجو کنید"
-							/>
+							<input type="text" class="search__input" placeholder="جستجو کنید" />
 							<button class="search__btn">
 								<span class="search__circle"></span>
 								<span class="search__stand"></span>
@@ -32,7 +32,7 @@
 				</div>
 				<div class="navbar__nav">
 					<div class="nav">
-						<input class="nav__burger-checkbox" id="burgermenu" type="checkbox">
+						<input class="nav__burger-checkbox" id="burgermenu" type="checkbox" />
 						<label class="nav__burger--lable" for="burgermenu">
 							<span></span>
 							<span></span>
@@ -42,42 +42,122 @@
 							<li class="nav__list"><a href="/" class="nav__link">خانه</a></li>
 							<li class="nav__list">
 								<a href="/" class="nav__link">دوره ها<span class="nav__arrow"></span></a>
+
 								<ul class="nav__sublists1">
-									<li><a href="#">تور و گردشگری</a></li>
-									<li><a href="#">آموزش آنلاین</a></li>
+									<li>
+										<a href="#"><i class="fas fa-globe-asia"></i>تور و گردشگری</a>
+									</li>
+									<li>
+										<a href="#"><i class="fas fa-user-graduate"></i>آموزش آنلاین</a>
+									</li>
 									<li class="nav__sublist1">
-										<a href="#">سایر</a>
+										<a href="#"><i class="fas fa-list"></i>سایر<i class="fas fa-angle-left"></i></a>
+
 										<ul class="nav__sublists2">
-											<li><a href="#">فروشگاه اینترنتی</a></li>
-											<li><a href="#">بلیط هواپیما و هتل</a></li>
-											<li><a href="#">اجاره خودرو</a></li>
+											<li>
+												<a href="#"><i class="fas fa-credit-card"></i>فروشگاه اینترنتی</a>
+											</li>
+											<li>
+												<a href="#"><i class="fas fa-hotel"></i>بلیط هواپیما و هتل</a>
+											</li>
+											<li>
+												<a href="#"><i class="fas fa-car"></i>اجاره خودرو</a>
+											</li>
 										</ul>
 									</li>
 								</ul>
 							</li>
-							<li class="nav__list">
+							<li class="nav__list nav__mega">
 								<a href="/" class="nav__link">مدرسین<span class="nav__arrow"></span></a>
+								<div class="nav__mega-content">
+									<div class="nav__mega-culomn">
+										<img src="images/mega-menu-bg.png" alt="mega menu" />
+										<a href="#" class="nav__button">سه روز تا پایان تخفیف</a>
+									</div>
+									<div class="nav__mega-culomn">
+										<h4>تمامی دوره ها</h4>
+										<ul class="nav__mega-lists">
+											<li>
+												<a href="#">
+													<i class="fas fa-globe-asia"></i>
+													<span>دوره پیشرفته css</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fas fa-globe-asia"></i>
+													<span>دوره پیشرفته css</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fas fa-globe-asia"></i>
+													<span>دوره پیشرفته css</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fas fa-globe-asia"></i>
+													<span>دوره پیشرفته css</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fas fa-globe-asia"></i>
+													<span>دوره پیشرفته css</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="nav__mega-culomn">
+										<h4>ویدوهای پر بازدید</h4>
+										<ul class="nav__mega-lists">
+											<li>
+												<a href="#">
+													<i class="fas fa-user-graduate"></i>
+													<span>دوره پیشرفته css</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fas fa-user-graduate"></i>
+													<span>دوره پیشرفته css</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fas fa-user-graduate"></i>
+													<span>دوره پیشرفته css</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fas fa-user-graduate"></i>
+													<span>دوره پیشرفته css</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fas fa-user-graduate"></i>
+													<span>دوره پیشرفته css</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</li>
 							<li class="nav__list">
 								<a href="/" class="nav__link">درباره ما</a>
 							</li>
 						</ul>
-					</input>
+					</div>
 				</div>
-			</div>
-			<div class="navbar__logo">
-				<a href="/">
-					<img
-						class="hidden show-large"
-						src="images/logo-header.png"
-						alt="logo large"
-					/>
-					<img
-						class="hidden show-small"
-						src="images/logo-header-small.png"
-						alt="logo large"
-					/>
-				</a>
+				<div class="navbar__logo">
+					<a href="/">
+						<img class="hidden show-large" src="images/logo-header.png" alt="logo large" />
+						<img class="hidden show-small" src="images/logo-header-small.png" alt="logo large" />
+					</a>
+				</div>
 			</div>
 		</div>
 	</body>
