@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
 @import "absrtacts/variables", "absrtacts/mixins";
-@import "base/base", "base/fonts", "base/helpers", "base/typography";
-@import "components/search";
-@import "layout/nav", "layout/navbar";
+@import "base/base", "base/fonts", "base/helpers", "base/typography", "base/animations";
+@import "components/search", "components/buttons";
+@import "layout/nav", "layout/navbar", "layout/header";
