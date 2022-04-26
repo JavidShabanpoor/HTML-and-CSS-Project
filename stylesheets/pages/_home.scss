@@ -26,3 +26,18 @@
 		padding: 1rem 2rem;
 	}
 }
+
+.plans {
+	// position: relative;
+	// text-align: center;
+	&__cards {
+		position: relative;
+		@include flex(center, center);
+	}
+	&__background {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+	}
+}
