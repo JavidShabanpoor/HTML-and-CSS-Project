@@ -10,3 +10,7 @@
 		flex-direction: $flex-direction;
 	}
 }
+
+@mixin bg-gradient($gradient) {
+	background: linear-gradient($gradient);
+}
