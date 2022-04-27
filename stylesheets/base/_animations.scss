@@ -50,3 +50,87 @@
 		opacity: 1;
 	}
 }
+@keyframes fade-out {
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes plane-flying {
+	20% {
+		transform: scale(0.8) rotate3d(0, 0, 1, -60deg);
+		opacity: 0.8;
+	}
+
+	40% {
+		transform: scale(0.7) rotate3d(1, 1, 1, -80deg);
+		opacity: 0.8;
+	}
+	60% {
+		transform: scale(0.5) rotate3d(1, 1, 1, -90deg);
+		top: 0;
+		right: 1rem;
+		opacity: 0.8;
+	}
+	100% {
+		transform: scale(0) rotate3d(1, 1, 1, -110deg);
+		top: 0;
+		right: 1rem;
+		opacity: 0.8;
+	}
+}
+
+@keyframes cloudes-to-left-right {
+	from {
+		transform: translateX(-5px);
+	}
+	to {
+		transform: translateX(5px);
+	}
+}
+
+@keyframes rocket-launch {
+	to {
+		top: 4.3rem;
+		right: 8rem;
+		transform: rotate(-70deg);
+	}
+}
+@keyframes rocket-transfer {
+	0% {
+		right: 8rem;
+		transform: rotate(-70deg);
+	}
+	33% {
+		transform: rotate(-70deg);
+	}
+	66% {
+		transform: rotate(-20deg);
+	}
+	100% {
+		right: 18rem;
+		transform: rotate(-20deg);
+	}
+}
+
+@keyframes clouds-to-bottom {
+	0% {
+		transform: translateY(-94%);
+	}
+	100% {
+		transform: translateY(83%);
+	}
+}
+
+@keyframes paper-plane-flying {
+	25% {
+		top: 6rem;
+		left: 16rem;
+		transform: rotateZ(-80deg);
+	}
+	100% {
+		top: -1rem;
+		left: -3rem;
+		transform: rotateZ(-90deg);
+	}
+}

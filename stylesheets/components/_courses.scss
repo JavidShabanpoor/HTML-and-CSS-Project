@@ -11,6 +11,10 @@
 		margin: 2rem;
 		border: 0.1rem solid $color-gray1;
 		border-radius: 0.5rem;
+
+		@media only screen and (max-width: 576px) {
+			width: 30rem;
+		}
 	}
 
 	&__header {
@@ -79,6 +83,7 @@
 	}
 	&__img {
 		display: block;
+		width: 100%;
 		border-top-right-radius: 0.5rem;
 		border-top-left-radius: 0.5rem;
 	}

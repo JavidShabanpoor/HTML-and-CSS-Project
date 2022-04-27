@@ -33,6 +33,10 @@
 	&__cards {
 		position: relative;
 		@include flex(center, center);
+
+		@media only screen and (max-width: 992px) {
+			flex-direction: column;
+		}
 	}
 	&__background {
 		position: absolute;

@@ -489,6 +489,206 @@ h6 {
   }
 }
 
+@-webkit-keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes plane-flying {
+  20% {
+    -webkit-transform: scale(0.8) rotate3d(0, 0, 1, -60deg);
+            transform: scale(0.8) rotate3d(0, 0, 1, -60deg);
+    opacity: 0.8;
+  }
+  40% {
+    -webkit-transform: scale(0.7) rotate3d(1, 1, 1, -80deg);
+            transform: scale(0.7) rotate3d(1, 1, 1, -80deg);
+    opacity: 0.8;
+  }
+  60% {
+    -webkit-transform: scale(0.5) rotate3d(1, 1, 1, -90deg);
+            transform: scale(0.5) rotate3d(1, 1, 1, -90deg);
+    top: 0;
+    right: 1rem;
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale(0) rotate3d(1, 1, 1, -110deg);
+            transform: scale(0) rotate3d(1, 1, 1, -110deg);
+    top: 0;
+    right: 1rem;
+    opacity: 0.8;
+  }
+}
+
+@keyframes plane-flying {
+  20% {
+    -webkit-transform: scale(0.8) rotate3d(0, 0, 1, -60deg);
+            transform: scale(0.8) rotate3d(0, 0, 1, -60deg);
+    opacity: 0.8;
+  }
+  40% {
+    -webkit-transform: scale(0.7) rotate3d(1, 1, 1, -80deg);
+            transform: scale(0.7) rotate3d(1, 1, 1, -80deg);
+    opacity: 0.8;
+  }
+  60% {
+    -webkit-transform: scale(0.5) rotate3d(1, 1, 1, -90deg);
+            transform: scale(0.5) rotate3d(1, 1, 1, -90deg);
+    top: 0;
+    right: 1rem;
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale(0) rotate3d(1, 1, 1, -110deg);
+            transform: scale(0) rotate3d(1, 1, 1, -110deg);
+    top: 0;
+    right: 1rem;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes cloudes-to-left-right {
+  from {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  to {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@keyframes cloudes-to-left-right {
+  from {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  to {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@-webkit-keyframes rocket-launch {
+  to {
+    top: 4.3rem;
+    right: 8rem;
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
+}
+
+@keyframes rocket-launch {
+  to {
+    top: 4.3rem;
+    right: 8rem;
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
+}
+
+@-webkit-keyframes rocket-transfer {
+  0% {
+    right: 8rem;
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
+  33% {
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
+  66% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    right: 18rem;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+@keyframes rocket-transfer {
+  0% {
+    right: 8rem;
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
+  33% {
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
+  66% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    right: 18rem;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+@-webkit-keyframes clouds-to-bottom {
+  0% {
+    -webkit-transform: translateY(-94%);
+            transform: translateY(-94%);
+  }
+  100% {
+    -webkit-transform: translateY(83%);
+            transform: translateY(83%);
+  }
+}
+
+@keyframes clouds-to-bottom {
+  0% {
+    -webkit-transform: translateY(-94%);
+            transform: translateY(-94%);
+  }
+  100% {
+    -webkit-transform: translateY(83%);
+            transform: translateY(83%);
+  }
+}
+
+@-webkit-keyframes paper-plane-flying {
+  25% {
+    top: 6rem;
+    left: 16rem;
+    -webkit-transform: rotateZ(-80deg);
+            transform: rotateZ(-80deg);
+  }
+  100% {
+    top: -1rem;
+    left: -3rem;
+    -webkit-transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg);
+  }
+}
+
+@keyframes paper-plane-flying {
+  25% {
+    top: 6rem;
+    left: 16rem;
+    -webkit-transform: rotateZ(-80deg);
+            transform: rotateZ(-80deg);
+  }
+  100% {
+    top: -1rem;
+    left: -3rem;
+    -webkit-transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg);
+  }
+}
+
 .search {
   position: relative;
   display: -webkit-box;
@@ -813,6 +1013,12 @@ h6 {
   border-radius: 0.5rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .course__box {
+    width: 30rem;
+  }
+}
+
 .course__header {
   position: relative;
   overflow: hidden;
@@ -896,6 +1102,7 @@ h6 {
 
 .course__img {
   display: block;
+  width: 100%;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
 }
@@ -1127,6 +1334,12 @@ h6 {
   margin: 0 1.5rem;
 }
 
+@media only screen and (max-width: 992px) {
+  .card:nth-child(2) {
+    margin: 2rem 0;
+  }
+}
+
 .card__header {
   width: 100%;
   height: 15rem;
@@ -1246,7 +1459,7 @@ h6 {
   border-bottom: 1px solid rgba(68, 68, 68, 0.1);
 }
 
-.card__list :last-child {
+.card__list:last-child {
   border-bottom: 0;
 }
 
@@ -1261,6 +1474,73 @@ h6 {
 
 .card__link {
   margin: 2rem;
+}
+
+.card__plane {
+  position: absolute;
+  z-index: 2;
+  top: 11rem;
+  right: 44%;
+  font-size: 3rem;
+  color: #457b9d;
+  -webkit-transform: rotate3d(0, 0, 1, -90deg);
+          transform: rotate3d(0, 0, 1, -90deg);
+  opacity: 0;
+}
+
+.card__rocket {
+  position: absolute;
+  z-index: 2;
+  top: 11rem;
+  right: 45%;
+  font-size: 3rem;
+  color: #457b9d;
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+          transform: rotate3d(0, 0, 1, -45deg);
+  opacity: 0;
+}
+
+.card__paper-plane {
+  position: absolute;
+  z-index: 2;
+  top: 11rem;
+  left: 45%;
+  font-size: 3rem;
+  color: #457b9d;
+  opacity: 0;
+}
+
+.card:hover .card__plan-title {
+  -webkit-animation: fade-out 0.3s ease forwards, fade-in 0.3s ease 0.8s forwards;
+          animation: fade-out 0.3s ease forwards, fade-in 0.3s ease 0.8s forwards;
+}
+
+.card:hover .card__plane {
+  opacity: 1;
+  -webkit-animation: plane-flying 2s ease 0.3s forwards;
+          animation: plane-flying 2s ease 0.3s forwards;
+}
+
+.card:hover .card__rocket {
+  opacity: 1;
+  -webkit-animation: rocket-launch 0.5s ease-out 0.8s forwards, rocket-transfer 1s linear 1.6s alternate infinite;
+          animation: rocket-launch 0.5s ease-out 0.8s forwards, rocket-transfer 1s linear 1.6s alternate infinite;
+}
+
+.card:hover .card__paper-plane {
+  opacity: 1;
+  -webkit-animation: paper-plane-flying 2s 0.5s ease-out forwards;
+          animation: paper-plane-flying 2s 0.5s ease-out forwards;
+}
+
+.card:hover .card__clouds--plane {
+  -webkit-animation: cloudes-to-left-right 1s linear alternate 3;
+          animation: cloudes-to-left-right 1s linear alternate 3;
+}
+
+.card:hover .card__clouds--rocket {
+  -webkit-animation: clouds-to-bottom 1.3s 0.5s linear infinite;
+          animation: clouds-to-bottom 1.3s 0.5s linear infinite;
 }
 
 .nav__lists {
@@ -1848,6 +2128,15 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .plans__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .plans__background {
