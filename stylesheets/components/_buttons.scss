@@ -37,4 +37,51 @@
 			}
 		}
 	}
+	&__shape {
+		color: rgb(218, 217, 217);
+		padding: 1.2rem 2rem 1.2rem 4rem;
+		&--pink {
+			background-color: #725fa5;
+		}
+		&--blue {
+			background-color: #457b9d;
+		}
+		&--orange {
+			background-color: #e76f51;
+		}
+		&:hover {
+			color: white;
+		}
+		&::before {
+			font-family: "Font Awesome 5 Free";
+			content: "\f3c1";
+			position: absolute;
+			top: 1rem;
+			left: 1rem;
+			font-size: 2rem;
+			transform: rotateY(-0.5turn);
+			opacity: 0;
+			transition: all 0.3s linear;
+		}
+		&::after {
+			font-family: "Font Awesome 5 Free";
+			content: "\f023";
+			position: absolute;
+			top: 1rem;
+			left: 1rem;
+			font-size: 2rem;
+			opacity: 1;
+			transition: all 0.3s linear;
+		}
+		&:hover {
+			&::after {
+				transform: rotateY(0.5turn);
+				opacity: 0;
+			}
+			&::before {
+				transform: rotateY(0);
+				opacity: 1;
+			}
+		}
+	}
 }

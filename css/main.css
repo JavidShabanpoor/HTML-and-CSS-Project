@@ -934,6 +934,65 @@ h6 {
           transform: scale(1, 1);
 }
 
+.btn__shape {
+  color: #dad9d9;
+  padding: 1.2rem 2rem 1.2rem 4rem;
+}
+
+.btn__shape--pink {
+  background-color: #725fa5;
+}
+
+.btn__shape--blue {
+  background-color: #457b9d;
+}
+
+.btn__shape--orange {
+  background-color: #e76f51;
+}
+
+.btn__shape:hover {
+  color: white;
+}
+
+.btn__shape::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f3c1";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  -webkit-transform: rotateY(-0.5turn);
+          transform: rotateY(-0.5turn);
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.btn__shape::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f023";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.btn__shape:hover::after {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+  opacity: 0;
+}
+
+.btn__shape:hover::before {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  opacity: 1;
+}
+
 .success-icon {
   width: 7rem;
   height: 7rem;
@@ -1466,7 +1525,7 @@ h6 {
 .card__list--price {
   font-size: 2.5rem;
   margin: 4rem 0 0 0;
-  border: 2ox solid rgba(68, 68, 68, 0.4);
+  border: 2px solid rgba(68, 68, 68, 0.4);
   border-radius: 0.5rem;
   background-color: rgba(68, 68, 68, 0.1);
   text-shadow: 2px 1px 4px #444444;
