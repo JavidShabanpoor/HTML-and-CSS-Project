@@ -154,3 +154,20 @@
 		opacity: 0;
 	}
 }
+
+@keyframes accordion-icon-move-in {
+	from {
+		top: -100px;
+	}
+	to {
+		top: 0;
+	}
+}
+@keyframes accordion-icon-move-out {
+	from {
+		top: 0;
+	}
+	to {
+		top: 100px;
+	}
+}
