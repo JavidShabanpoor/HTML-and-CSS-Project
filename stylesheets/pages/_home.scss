@@ -61,3 +61,17 @@
 		}
 	}
 }
+
+.about {
+	padding: 8rem 0;
+	background-color: #fffaf3;
+	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+	text-align: center;
+	&__box {
+		@include flex(space-evenly, center);
+		@media only screen and (max-width: 992px) {
+			flex-direction: column;
+			padding: 10rem 0;
+		}
+	}
+}
