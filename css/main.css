@@ -2151,6 +2151,81 @@ h6 {
   }
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal:target {
+  display: block;
+}
+
+.modal__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 45rem;
+  overflow: hidden;
+  margin: 10rem auto 0 auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+  .modal__content {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .modal__content {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .modal__content {
+    max-width: 60%;
+  }
+}
+
+.modal__img {
+  width: 100%;
+}
+
+.modal__close {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  z-index: 20;
+  font-size: 3rem;
+  color: #d35400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.modal__close:hover {
+  color: #e76f51;
+}
+
 .nav__lists {
   position: relative;
   z-index: 30;
