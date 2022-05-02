@@ -705,8 +705,36 @@
 
 		<div class="contact mt-50 mb-50">
 			<div class="glass">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quam ipsa excepturi quis soluta voluptatum consectetur maxime neque, sequi accusamus sed voluptate. Labore consequatur
-				quasi facilis debitis nobis hic quod.
+				<form action="#" class="form">
+					<div class="form__group">
+						<input type="text" id="fullname" />
+						<label for="fullname">نام کامل</label>
+					</div>
+					<div class="form__group">
+						<input type="text" id="email" />
+						<label for="email">ایمیل</label>
+						<span class="form__input-bar"></span>
+					</div>
+					<div class="form__group">
+						<div class="form__check">
+							<input type="radio" name="gender" id="male" />
+							<label for="male">آقا</label>
+						</div>
+						<div class="form__check">
+							<input type="radio" name="gender" id="female" />
+							<label for="female">خانم</label>
+						</div>
+					</div>
+					<div class="form__group">
+						<div class="form__check">
+							<input type="checkbox" id="newsletter" />
+							<label for="newsletter">عضویت در خبرنامه</label>
+						</div>
+					</div>
+					<button class="form__button btn btn__ripple btn__ripple--blue">
+						<i class="fas fa-paper-plane"></i>
+					</button>
+				</form>
 			</div>
 			<iframe
 				class="maps"
