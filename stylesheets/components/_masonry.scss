@@ -1,6 +1,7 @@
 .masonry {
 	@include flex(center, center, column);
 	&__box {
+		overflow: hidden;
 		columns: 4;
 		column-width: 30rem;
 		column-gap: 2rem;

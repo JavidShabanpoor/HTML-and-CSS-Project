@@ -84,4 +84,41 @@
 			}
 		}
 	}
+	&__ripple {
+		color: white;
+		@media only screen and (max-width: 768px) {
+			margin: 2rem auto;
+			width: 100%;
+		}
+		& span {
+			position: relative;
+			margin-right: 0.5rem;
+			z-index: 2;
+		}
+		&--blue {
+			background-color: $color-blue5;
+			&::before {
+				background-color: $color-blue6;
+			}
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: block;
+			width: 30rem;
+			height: 30rem;
+			border-radius: 50%;
+			opacity: 1;
+			transform: translate(-50%, -50%) scale(0);
+		}
+
+		&:active::before,
+		&:focus::before {
+			transform: translate(-50%, -50%) scale(1);
+			opacity: 0;
+			transition: opacity 1s ease, transform 0.8s ease;
+		}
+	}
 }
