@@ -287,6 +287,14 @@ a:hover {
   display: none;
 }
 
+.img-round {
+  border-radius: 50%;
+}
+
+.white {
+  color: white;
+}
+
 @media only screen and (max-width: 992px) {
   .show-small {
     display: block;
@@ -2504,6 +2512,158 @@ h6 {
   --opacity: 1;
 }
 
+.pattern {
+  background-image: repeating-linear-gradient(45deg, rgba(217, 123, 147, 0.4) 0 1px, transparent 0 50px), repeating-linear-gradient(-45deg, rgba(230, 229, 234, 0.1) 0 1px, transparent 0 50px), -webkit-gradient(linear, left top, left bottom, from(#725fa5), to(#d97b93));
+  background-image: repeating-linear-gradient(45deg, rgba(217, 123, 147, 0.4) 0 1px, transparent 0 50px), repeating-linear-gradient(-45deg, rgba(230, 229, 234, 0.1) 0 1px, transparent 0 50px), linear-gradient(to bottom, #725fa5, #d97b93);
+}
+
+.flip {
+  width: 100%;
+  height: 26rem;
+  margin: 0 2rem;
+  -webkit-perspective: 999px;
+          perspective: 999px;
+}
+
+@media only screen and (max-width: 992px) {
+  .flip {
+    margin: 2rem auto;
+  }
+}
+
+.flip:hover > .flip__card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip__card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+
+.flip__main-side, .flip__back-side {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip__main-side::after, .flip__back-side::after {
+  position: absolute;
+  bottom: 0;
+  left: 5rem;
+  color: #ccc;
+  font-size: 8rem;
+  font-weight: 900;
+  opacity: 0.3;
+}
+
+.flip__main-side::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10e";
+}
+
+.flip__back-side {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip__back-side::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10d";
+}
+
+.info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+.info img {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+.skew {
+  position: relative;
+  width: 100%;
+  height: 26rem;
+  padding: 2rem;
+  margin: 0 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .skew {
+    height: auto;
+    margin: 2rem auto;
+  }
+}
+
+.skew::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transform: skew(-4deg);
+          transform: skew(-4deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.skew:hover::before {
+  -webkit-transform: skew(4deg);
+          transform: skew(4deg);
+}
+
+.skew__wrap {
+  position: relative;
+  z-index: 2;
+}
+
 .nav__lists {
   position: relative;
   z-index: 30;
@@ -3158,5 +3318,30 @@ h6 {
 
 .contact {
   position: relative;
+}
+
+.testimonials {
+  padding: 7rem 1rem;
+}
+
+.testimonials__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .testimonials__boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
