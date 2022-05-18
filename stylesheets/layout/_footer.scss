@@ -1,143 +1,125 @@
 .footer {
-	@include flex(center);
-	padding: 4rem 0;
-	border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
-	color: white;
-	@media only screen and (max-width: 992px) {
-		flex-direction: column;
-	}
+  @include flex(center);
+  padding: 4rem 0;
+  border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+  color: white;
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+  }
 
-	& h4 {
-		padding-bottom: 1.3rem;
-		color: white;
-		font-size: 1.5rem;
-		border-bottom: 2px solid rgba($color: #f70000, $alpha: 0.8);
-	}
-	//column 1
-	&__about {
-		padding: 2rem;
-		width: 40%;
-		@media only screen and (max-width: 992px) {
-			width: 100%;
-		}
-	}
-	&__company {
-		@include flex(space-evenly, center, column);
-		height: 100%;
-	}
-	&__socials {
-		@include flex(space-evenly);
-		width: 100%;
-		@media only screen and (max-width: 576px) {
-			flex-direction: column;
-			align-items: center;
-		}
-	}
-	&__social-link {
-		@include flex(center, center);
-		width: 12rem;
-		border-radius: 30px;
-		padding: 3px;
-		margin: 0.5rem;
-		color: white;
-		transition: 0.2s;
+  & h4 {
+    padding-bottom: 1.3rem;
+    color: white;
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgba($color: #f70000, $alpha: 0.8);
+  }
+  //column 1
+  &__about {
+    padding: 2rem;
+    width: 40%;
+    @media only screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  &__company {
+    @include flex(space-evenly, center, column);
+    height: 100%;
+  }
+  &__socials {
+    @include flex(space-evenly);
+    width: 100%;
+    @media only screen and (max-width: 576px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__social-link {
+    @include flex(center, center);
+    width: 12rem;
+    border-radius: 30px;
+    padding: 3px;
+    margin: 0.5rem;
+    color: white;
+    transition: 0.2s;
 
-		&:hover {
-			color: $color-gray2;
-		}
+    &:hover {
+      color: $color-gray2;
+    }
 
-		&--purple {
-			background-image: linear-gradient(#a232af, #d82e6c);
-			& > svg {
-				background-color: #ac194e;
-			}
-		}
+    &--purple {
+      background-image: linear-gradient(#a232af, #d82e6c);
+    }
 
-		&--red {
-			background-color: #f70000;
-			& > svg {
-				background-color: white;
-			}
-		}
+    &--red {
+      background-color: #f70000;
+    }
 
-		&--blue {
-			background-color: #32a1fc;
-			& > svg {
-				background-color: white;
-			}
-		}
+    &--blue {
+      background-color: #32a1fc;
+    }
+  }
 
-		& > svg {
-			display: inline-flex;
-			height: 3.5rem;
-			width: 3.5rem;
-			padding: 0.5rem;
-			margin-left: 1rem;
-			border-radius: 50%;
-		}
-	}
+  //column 2
+  &__link {
+    padding: 2rem;
+    width: 30%;
+    @media only screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  &__links {
+    @include flex(center, flex-start, column);
+    padding-top: 1rem;
+    & > a {
+      color: white;
+      padding-top: 1.5rem;
+      transition: 0.2s;
+      &:hover {
+        color: $color-red1;
+      }
+    }
+  }
 
-	//column 2
-	&__link {
-		padding: 2rem;
-		width: 30%;
-		@media only screen and (max-width: 992px) {
-			width: 100%;
-		}
-	}
-	&__links {
-		@include flex(center, flex-start, column);
-		padding-top: 1rem;
-		& > a {
-			color: white;
-			padding-top: 1.5rem;
-			transition: 0.2s;
-			&:hover {
-				color: $color-red1;
-			}
-		}
-	}
+  //column 3
 
-	//column 3
+  &__support {
+    @include flex(space-between, false, column);
+    padding: 2rem;
+    width: 30%;
+    @media only screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
 
-	&__support {
-		@include flex(space-between, false, column);
-		padding: 2rem;
-		width: 30%;
-		@media only screen and (max-width: 992px) {
-			width: 100%;
-		}
-	}
+  &__hours {
+    @include flex(space-evenly, false, column);
+    height: 100%;
+  }
 
-	&__hours {
-		@include flex(space-evenly, false, column);
-		height: 100%;
-	}
+  &__single-info {
+    @include flex(flex-start, center);
 
-	&__single-info {
-		@include flex(flex-start, center);
+    & > span {
+      margin-left: 1.5rem;
+      font-size: 3rem;
+      color: $color-gray1;
+      opacity: 0.6;
+    }
+    & > p {
+      @include flex(center, center);
+      width: 100%;
+      & > span {
+        margin-right: auto;
+      }
+    }
+  }
+  &__payment {
+    @include flex(center, center);
+    border-top: 2px solid rgba(181, 181, 181, 0.596);
 
-		& > span {
-			margin-left: 1.5rem;
-			font-size: 3rem;
-			color: $color-gray1;
-			opacity: 0.6;
-		}
-		& > p {
-			@include flex(center, center);
-			width: 100%;
-			& > span {
-				margin-right: auto;
-			}
-		}
-	}
-	&__payment {
-		@include flex(center, center);
-		border-top: 2px solid rgba(181, 181, 181, 0.596);
-
-		& > img {
-			padding-top: 2rem;
-			width: 100%;
-		}
-	}
+    & > img {
+      padding-top: 2rem;
+      width: 100%;
+    }
+  }
 }

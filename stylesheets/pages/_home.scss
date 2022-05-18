@@ -1,105 +1,109 @@
 .features {
-	position: relative;
-	top: -5rem;
-	z-index: 10;
-	display: flex;
-	flex-wrap: wrap;
-	@media only screen and (max-width: 992px) {
-		top: 0;
-	}
+  position: relative;
+  top: -5rem;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 992px) {
+    top: 0;
+  }
 
-	&__box {
-		flex-grow: 1;
-		width: 30rem;
-		padding: 1rem 2rem;
-		margin: 2rem;
-		border-radius: 1rem;
-		background-color: $color-white;
-		text-align: center;
-		box-shadow: 0 8px 16px 0 rgba($color-blue3, 0.2);
-		transition: all 0.3s ease;
-		&:hover {
-			transform: scale(1.05);
-		}
-	}
-	&__text {
-		padding: 1rem 2rem;
-	}
+  &__box {
+    flex-grow: 1;
+    width: 30rem;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: $color-white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba($color-blue3, 0.2);
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__text {
+    padding: 1rem 2rem;
+  }
 }
 
 .plans {
-	position: relative;
-	text-align: center;
-	&__cards {
-		position: relative;
-		@include flex(center, center);
+  position: relative;
+  text-align: center;
+  &__cards {
+    position: relative;
+    @include flex(center, center);
 
-		@media only screen and (max-width: 992px) {
-			flex-direction: column;
-		}
-	}
-	&__background {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 100%;
-		height: 20rem;
-		background: linear-gradient(to right, rgba(196, 136, 229, 0.5), rgba(133, 185, 221, 0.5));
+    @media only screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+  &__background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(
+      to right,
+      rgba(196, 136, 229, 0.5),
+      rgba(133, 185, 221, 0.5)
+    );
 
-		&::before,
-		&::after {
-			content: "";
-			display: block;
-			width: 100%;
-			height: 10rem;
-			background-image: url(../../images/wave-plans.svg);
-			background-position-y: top;
-			background-size: 100% 100%;
-		}
-		&::after {
-			transform: rotate(0.5turn);
-		}
-	}
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 10rem;
+      background-image: url(../../images/wave-plans.svg);
+      background-position-y: top;
+      background-size: 100% 100%;
+    }
+    &::after {
+      transform: rotate(0.5turn);
+    }
+  }
 }
 
 .about {
-	padding: 8rem 0;
-	background-color: #fffaf3;
-	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-	text-align: center;
-	&__box {
-		@include flex(space-evenly, center);
-		@media only screen and (max-width: 992px) {
-			flex-direction: column;
-			padding: 10rem 0;
-		}
-	}
+  padding: 8rem 0;
+  background-color: #fffaf3;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  text-align: center;
+  &__box {
+    @include flex(space-evenly, center);
+    @media only screen and (max-width: 992px) {
+      flex-direction: column;
+      padding: 10rem 0;
+    }
+  }
 }
 
 .contact {
-	position: relative;
+  position: relative;
 }
 .testimonials {
-	padding: 7rem 1rem;
-	&__boxes {
-		@include flex(space-evenly, center);
+  padding: 7rem 1rem;
+  &__boxes {
+    @include flex(space-evenly, center);
 
-		@media only screen and (max-width: 992px) {
-			flex-direction: column;
-		}
-	}
+    @media only screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
 }
 .footers {
-	background: url(../../images/background-footer.jpg) center no-repeat;
-	background-size: cover;
-	overflow: hidden;
+  background: image("background-footer.jpg") center no-repeat;
+  background-size: cover;
+  overflow: hidden;
 
-	&__copyright {
-		padding: 2rem;
-		color: white;
-		text-align: center;
-		& a {
-			color: $color-green1;
-		}
-	}
+  &__copyright {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    & a {
+      color: $color-green1;
+    }
+  }
 }
